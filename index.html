@@ -25,35 +25,35 @@
             <!-- Conteneur des questions -->
             <div id="question-container" class="space-y-6">
                 <!-- Question -->
-                <p id="question-text" class="text-xl font-semibold text-gray-700 text-center">Quel est le capital de la France ?</p>
+                <p id="question-text" class="text-xl font-semibold text-gray-700 text-center"></p>
 
                 <!-- Options -->
-                <div class="space-y-4">
+                <div class="space-y-4 hidden" id="block_rep">
                     <label class="flex items-center bg-gray-50 p-4 rounded-xl cursor-pointer hover:bg-purple-50 transition-all border border-gray-200">
                         <input type="radio" name="option" value="A" class="mr-3">
-                        <span class="text-lg text-gray-700">Paris</span>
+                        <span class="text-lg text-gray-700" id="reponse1"></span>
                     </label>
                     <label class="flex items-center bg-gray-50 p-4 rounded-xl cursor-pointer hover:bg-purple-50 transition-all border border-gray-200">
                         <input type="radio" name="option" value="B" class="mr-3">
-                        <span class="text-lg text-gray-700">Londres</span>
+                        <span class="text-lg text-gray-700" id="reponse2"></span>
                     </label>
                     <label class="flex items-center bg-gray-50 p-4 rounded-xl cursor-pointer hover:bg-purple-50 transition-all border border-gray-200">
                         <input type="radio" name="option" value="C" class="mr-3">
-                        <span class="text-lg text-gray-700">Berlin</span>
+                        <span class="text-lg text-gray-700" id="reponse3"></span>
                     </label>
                 </div>
 
                 <!-- Navigation -->
                 <div class="flex justify-between gap-4 mt-8">
-                    <button class="flex-1 bg-gray-500 text-white px-6 py-3 rounded-xl hover:bg-gray-600 transition-all">Précédent</button>
-                    <button id="next-btn" class="flex-1 bg-purple-600 text-white px-6 py-3 rounded-xl hover:bg-purple-700 transition-all">Suivant</button>
+                    <button id="precedent-btn" class="flex-1 bg-yellow-500 text-white px-6 py-3 rounded-xl hover:bg-yellow-600 transition-all hidden">Précédent</button>
+                    <button id="next-btn" class="flex-1 bg-lime-500 text-white px-6 py-3 rounded-xl hover:bg-lime-700 transition-all">Start</button>
                 </div>
             </div>
 
             <!-- Conteneur du score -->
-            <div id="score-container" class=" text-center mt-8">
+            <div id="score-container" class="hidden text-center mt-8">
                 <h2 class="text-2xl font-bold text-gray-800">Votre Score : <span id="score" class="text-green-600">0</span></h2>
-                <button class="bg-green-600 text-white px-8 py-3 rounded-xl mt-6 hover:bg-green-700 transition-all">Recommencer</button>
+                <button class="bg-green-600 text-white px-8 py-3 rounded-xl mt-6 hover:bg-green-700 transition-all" id="recommencer">Recommencer</button>
             </div>
         </div>
     </div>
