@@ -17,9 +17,6 @@ var questions = [
   ];
   
   var questionText = document.getElementById('question-text');
-  var reponse1 = document.getElementById('reponse1');
-  var reponse2 = document.getElementById('reponse2');
-  var reponse3 = document.getElementById('reponse3');
   var nextBtn = document.getElementById('next-btn');
   var precedentBtn = document.getElementById('precedent-btn');
   var scoreContainer = document.getElementById('score-container');
@@ -46,6 +43,9 @@ var questions = [
 
         scoreContainer.style = "display:block; justify-items:center";
     }else{
+    let reponse = document.getElementById('reponse').value;
+    console.log(reponse);
+        
     block_rep.style = "display:block;";
     counter++;
     let nextBtn = document.getElementById('next-btn');
@@ -56,9 +56,7 @@ var questions = [
 
 
     questionText.innerHTML = questions[counter]['question']; 
-    reponse1.innerHTML = questions[counter]['choices'][0]; 
-    reponse2.innerHTML = questions[counter]['choices'][1]; 
-    reponse3.innerHTML = questions[counter]['choices'][2]; 
+    document.getElementById('reponse').value = '';
     }
 
     
