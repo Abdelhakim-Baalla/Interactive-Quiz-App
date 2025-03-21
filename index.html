@@ -6,10 +6,12 @@
     <title>Quiz Interactif</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=13720&format=png&color=000000" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Outfit', sans-serif;
         }
     </style>
 </head>
@@ -49,11 +51,13 @@
             </div>
 
             <!-- Conteneur du score -->
-            <div id="score-container" class="hidden text-center mt-8">
+            <div id="score-container" class=" text-center mt-8">
                 <h2 class="text-2xl font-bold text-gray-800">Votre Score : <span id="score" class="text-green-600">0</span></h2>
                 <button class="bg-green-600 text-white px-8 py-3 rounded-xl mt-6 hover:bg-green-700 transition-all">Recommencer</button>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
