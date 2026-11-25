@@ -1,5 +1,7 @@
 # Interactive-Quiz-App
 
+[Ouvrir le site](https://quiz-bice-alpha.vercel.app/) · [Gestion des réponses et du score](https://github.com/Abdelhakim-Baalla/Interactive-Quiz-App/blob/main/script.js)
+
 ## Description
 Un quiz interactif avec des questions à choix multiples. Les utilisateurs peuvent sélectionner des réponses, naviguer entre les questions, et obtenir un score final à la fin du quiz. Ce projet est conçu avec HTML, CSS (Tailwind) et JavaScript.
 
